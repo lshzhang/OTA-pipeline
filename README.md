@@ -1,5 +1,5 @@
-# AltAmpDS
-Alternative Bioinformatic Pipeline for AmpliconDS
+# OTA-pipeline
+Open source tumor amplicon pipeline, ie an alternative Bioinformatic Pipeline for AmpliconDS, that works for any ampliconDS library given a proper manifest file
 
 This program is designed to run through a NextSeq or MiSeq run directory looking for 
 fastq files located in ${current directory or specified directory}/Data/Intensities/BaseCalls/ 
