@@ -17,7 +17,7 @@ sudo pip install biopython==1.66 pysam==0.8.4 pyvcf==0.6.7 pandas==0.16.2 regex=
 #note for freebayes you will need to go to gcc 4.8
 #install new versions of gcc and g++
 sudo apt-get remove gcc g++
-sudo apt-get install gcc-4.8 g++-4.8
+sudo apt-get -y install gcc-4.8 g++-4.8
 sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-4.8 40 --slave /usr/bin/g++ g++ /usr/bin/g++-4.8
 
 git clone --recursive git://github.com/ekg/freebayes.git
@@ -28,7 +28,7 @@ cd $DIR
 sudo apt-get remove gcc-4.8 g++-4.8
 
 
-sudo apt-get install gcc g++
+sudo apt-get -y install gcc g++
 
 #install vcflib
 git clone --recursive git://github.com/vcflib/vcflib.git
