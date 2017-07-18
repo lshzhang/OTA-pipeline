@@ -27,7 +27,7 @@ def main(argv):
     for opt, arg in opts:
       if opt == '-h':
         print 'modify_annovar.py -i <inputannovar> -o <outputannovar> -v <vcffile> -p <pipelineused> -c <consensus_refseq_file>'
-        print 'The purpose of the simple python script is to add columns to annovar files from vcfs which give allele data, which aligner and variant caller was used, and allele data of each library, plus add filter data columns as well'
+        print 'The purpose of the simple python script is to add columns to annovar files from vcfs which give allele data, which aligner and variant caller was used, and allele data of each library, plus add filter data columns as well, plus add filter data columns as well like PB if two samples'
         print 'Please note annovar data must NOT have otherinfo because this program cannot handle empty headers' 
         print 'Note: if multisample - there must not be more than 2 samples; the multisample processing is specific to trusight tumor'
         print 'the consensus refseq file is a two column csv file with headers with first column gene name and the consensus transcript used, header names can be anything'
