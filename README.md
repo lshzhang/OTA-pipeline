@@ -11,9 +11,9 @@ The main script file to run is runAltPipeline.sh.
 
 ## example usage
 ```bash
-bash /<AltAmpDS directory>/runAltPipeline -h #to get help and see the different parameters
-bash /<AltAmpDS directory>/runAltPipeline -s /<AltAmpDS directory>/trusight_tumor_pipeline.sh > output_alt_pipeline_run.txt 2>&1&
-nohup sh /<AltAmpDS directory>/runAltPipeline.sh -debugging true -validation true> output_alt_pipeline_run.txt 2>&1&
+bash /<OTA-pipeline directory>/runAltPipeline -h #to get help and see the different parameters
+bash /<OTA-pipeline directory>/runAltPipeline -s /<OTA-pipeline directory>/trusight_tumor_pipeline.sh > output_alt_pipeline_run.txt 2>&1&
+nohup sh /<OTA-pipeline directory>/runAltPipeline.sh -debugging true -validation true> output_alt_pipeline_run.txt 2>&1&
 ```
 
 It is highlest suggested to make script alias to make running the pipeline easier
@@ -24,9 +24,9 @@ vim ./.bashrc
 in the bashrc file under the # User specific aliases and functions section (modify as appropriate for your machine)<br />
 
 ```
-alias runAltPipeline='nohup bash /<AltAmpDS directory>/runAltPipeline.sh > output_alt_pipeline_run.txt 2>&1&'
-alias debugRunAltPipeline='nohup bash /<AltAmpDS directory>/runAltPipeline.sh -debugging true -validation true> output_alt_pipeline_run.txt 2>&1&'
-alias validationRunAltPipeline='nohup sh /<AltAmpDS directory>/runAltPipeline.sh -validation true > output_alt_pipeline_run.txt 2>&1&'
+alias runAltPipeline='nohup bash /<OTA-pipeline directory>/runAltPipeline.sh > output_alt_pipeline_run.txt 2>&1&'
+alias debugRunAltPipeline='nohup bash /<OTA-pipeline directory>/runAltPipeline.sh -debugging true -validation true> output_alt_pipeline_run.txt 2>&1&'
+alias validationRunAltPipeline='nohup sh /<OTA-pipeline directory>/runAltPipeline.sh -validation true > output_alt_pipeline_run.txt 2>&1&'
 
 ```
 where runAltPipeline is the default, debugRunAltPipeline and validationRunAltPipeline do not get rid of temporary files, debugRunAltPipeline has less restrictions region depth (to use when testing pipeline with very small artifical fastqs) <br />
