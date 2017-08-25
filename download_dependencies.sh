@@ -121,7 +121,7 @@ unzip download
 rm download
 cd snpeff
 mkdir data 
-java -jar snpEff.jar download hg19
+java -jar snpEff.jar -download hg19
 
 cd $DIR
 
